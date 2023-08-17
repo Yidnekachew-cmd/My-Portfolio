@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Yidne's Portfolio</title>
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <title>Yidne Portfolio</title>
   </head>
   <body>
-    <div class="page">
+    <div id="page">
       <header>
         <div class="heading">
           <div class="header-img">
@@ -38,7 +39,6 @@
         </div>
       </header>
       <main>
-        <div class="container">
           <section class="first-section">
             <div class="first-page">
               <h1>Yidnekachew kassahun</h1>
@@ -49,11 +49,10 @@
                 hesitate and contact me.
               </p>
               <p class="short-text"><a href="#">Start collaboration</a></p>
-
+              <div class="img-dot">
+                <img src="./images/image_dots.svg" alt="image" />
+              </div>
               <!-- desktop first page image and geometry  -->
-            </div>
-            <div class="img-dot">
-              <img src="./images/image_dots.svg" alt="image" />
             </div>
             <div class="desktop-img">
               <img src="./images/desktop-img-1.svg" alt="image" />
@@ -357,15 +356,12 @@
               </div> -->
             </div>
           </section>
-          <section>
-            <div class="about-page">
+          <section class="about-page">
               <div class="about-intro">
                 <h2 class="about-title">About</h2>
                 <p class="about-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ea eiusmod
+                  A multi-skilled front-end developer with hands-on experience in developing and maintaining web apps. 
+Currently, I'm learning at Microverse, a software development program that teaches students remotely, enabling them to work in pair programming. I am equipped with the following skills as I went through the program.
                 </p>
                 <div class="about-link about-link-desktop">
                   <p class="about-link-text">
@@ -376,44 +372,46 @@
                   </div>
                 </div>
               </div>
-              <div class="about-info-1">
-                <h3>Languages</h3>
-                <ul>
-                  <li>JavaScript (ES5/ES6)</li>
-                  <li>Ruby</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                </ul>
-                <img src="./images/about-img-1.svg" alt="hash tag" />
+              <div class="about-info">
+                <div class="about-info-1">
+                  <h3>Languages</h3>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (ES5/ES6)</li>
+                    <li>Redux</li>
+                    <li>PostgreSQL</li>
+                    <li>Ruby</li>
+                  </ul>
+                  <img src="./images/about-img-1.svg" alt="hash tag" />
+                </div>
+                <div class="about-info-2">
+                  <h3>Frameworks</h3>
+                  <ul>
+                    <li>Bootstrap</li>
+                    <li>React js</li>
+                    <li>Ruby on rails</li>
+                    <li>RSpec</li>
+                  </ul>
+                  <img src="./images/about-img-2.svg" alt="dimond symbol" />
+                </div>
+                <div class="about-info-3">
+                  <h3>Skills</h3>
+                  <ul>
+                    <li>Codekit</li>
+                    <li>Codepen</li>
+                    <li>GitHub</li>
+                    <li>GitLAb</li>
+                    <li>Terminal</li>
+                  </ul>
+                  <img src="./images/about-img-3.svg" alt="light bulb" />
+                </div>
+                <div class="about-dots">
+                  <img src="./images/image_dots_with_teal.svg" alt="image" />
+                </div>
               </div>
-              <div class="about-info-2">
-                <h3>Frameworks</h3>
-                <ul>
-                  <li>Bootstrap</li>
-                  <li>Ruby on rails</li>
-                  <li>RSpec</li>
-                  <li>Capibara</li>
-                  <li>Selenium</li>
-                </ul>
-                <img src="./images/about-img-2.svg" alt="dimond symbol" />
-              </div>
-              <div class="about-info-3">
-                <h3>Skills</h3>
-                <ul>
-                  <li>Codekit</li>
-                  <li>Codepen</li>
-                  <li>GitHub</li>
-                  <li>GitLAb</li>
-                  <li>Terminal</li>
-                </ul>
-                <img src="./images/about-img-3.svg" alt="light bulb" />
-              </div>
-              <div class="about-dots">
-                <img src="./images/image_dots_with_teal.svg" alt="image" />
-              </div>
-            </div>
           </section>
-          <section>
+          <section class="form-section">
             <div class="last-part-wraper">
               <div class="last-part-img">
                 <img src="./images/header-img.svg" alt=" image" />
@@ -467,7 +465,6 @@
               </div>
             </div>
           </section>
-        </div>
       </main>
       <footer>
         <div class="footer" id="footer">
@@ -481,19 +478,19 @@
               </div>
             </div>
             <ul class="icons">
-              <li>
+              <!-- <li>
                 <img
                   src="./images/ic_stackoverflow.svg"
                   alt="stackoverflow icon"
                 />
-              </li>
+              </li> -->
               <li><img src="./images/ic_github.svg" alt="github icon" /></li>
               <li><img src="./images/ic_twitter.svg" alt="twitter icon" /></li>
               <li>
                 <img src="./images/ic_linkedin.svg" alt="linkedin icon" />
               </li>
-              <li><img src="./images/ic_medium.svg" alt="medium icon" /></li>
-              <li>
+              <!-- <li><img src="./images/ic_medium.svg" alt="medium icon" /></li>
+              <li> -->
                 <img src="./images/ic_angellist.svg" alt="angellist icon" />
               </li>
             </ul>
