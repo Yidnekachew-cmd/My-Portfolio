@@ -1,6 +1,6 @@
-const btn = document.getElementById("btn");
-btn.addEventListener("click", function (e) {
-  e.target.style.background = "blue";
+const btn = document.getElementById('btn');
+btn.addEventListener('click', (e) => {
+  e.target.style.background = 'blue';
 });
 
 // function functionYIdne() {
