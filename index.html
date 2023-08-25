@@ -6,40 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
+    integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Yidne Portfolio</title>
   </head>
   <body>
-    <div id="page">
+
       <header>
         <div class="heading">
           <div class="header-img">
             <img src="./images/header-img.svg" alt="header image" />
+            <div class="menuBar">
+              <img onclick="onClickMenu()" class="mobile_menu_icon" src="images/ic_menu.svg" alt="menu_icon">
+
+            <img onclick="onClickClose()" class="mobile_close_icon" src="images/Union.svg" alt="menu_icon">
+            </div>
           </div>
           <nav class="navbar">
             <ul class="nav-menu">
               <li class="nav-item">
-                <a href="#">Hello</a>
+                <a href="#hello">Hello</a>
               </li>
               <li class="nav-item">
-                <a href="#">Portfolio</a>
+                <a href="#portfolio-section">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a href="#">About</a>
+                <a href="#about-section">About</a>
               </li>
               <li class="nav-item">
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
+          
           </nav>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+       
         </div>
       </header>
+      <div class="mobilemenu">
+        <ul>
+          <li><a id="hellolink" href="#hello"> Hello</a></li>
+          <li><a id="portfoliolink" href="#portfolio-section"> Portfolio</a></li>
+          <li><a id="aboutlink" href="#about-section"> About</a></li>
+          <li><a id="contactlink" href="#contact"> Contact</a></li>
+        </ul>
+      </div>
       <main>
-          <section class="first-section">
+          <section id="hello" class="first-section">
             <div class="first-page">
               <h1>Yidnekachew kassahun</h1>
               <p class="main-text">
@@ -48,283 +67,70 @@
                 like what you see and have a project you need coded, don’t
                 hesitate and contact me.
               </p>
-              <p class="short-text"><a href="#">Start collaboration</a></p>
+              <button class="collab-btn" type="button">
+                <a href="#contact">
+                  Start collaboration <i class="fa fa-light fa-arrow-down-to-bracket"></i>
+                </a>
+              </button>
               <div class="img-dot">
                 <img src="./images/image_dots.svg" alt="image" />
               </div>
               <!-- desktop first page image and geometry  -->
             </div>
+            <div class="img-gallery">
+              <img
+                src="./images/first-page-img.svg"
+                alt="images gallery"
+                class="project-img"
+              />
+            </div>
             <div class="desktop-img">
               <img src="./images/desktop-img-1.svg" alt="image" />
             </div>
           </section>
-          <section class="projects-part">
-            <div class="projects-mobile">
-              <div class="img-gallery">
-                <img
-                  src="./images/first-page-img.svg"
-                  alt="images gallery"
-                  class="project-img"
-                />
-              </div>
-              <h2>Projects</h2>
-              <div>
-                <img
-                  src="./images/img-1 (1).svg"
-                  alt="project image"
-                  class="project-img"
-                />
-              </div>
-              <div class="project-info">
-                <h3 class="project-info-title">Project name goes here</h3>
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>JavaScript</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow" /></span
-                  ></a>
-                </div>
-              </div>
+          <!-- <section class="project" id="portfolio-section">
 
-              <div>
-                <img
-                  src="./images/img-1 (2).svg"
-                  alt="project image"
-                  class="project-img"
-                />
+            <div class="firstproject">
+              <div class="firstproject_name">
+                <h2 class="title">Projects</h2>
               </div>
-              <div class="project-info">
-                <h3>Project name goes here</h3>
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>JavaScript</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow" /></span
-                  ></a>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="./images/img-1 (3).svg"
-                  alt="project image"
-                  class="project-img"
-                />
-              </div>
-              <div class="project-info">
-                <h3>Project name goes here</h3>
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>JavaScript</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow" /></span
-                  ></a>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="./images/img-1 (4).svg"
-                  alt="project image"
-                  class="project-img"
-                />
-              </div>
-              <div class="project-info">
-                <h3>Project name goes here</h3>
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>JavaScript</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow" /></span
-                  ></a>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="./images/img-1 (5).svg"
-                  alt="project image"
-                  class="project-img"
-                />
-              </div>
-              <div class="project-info">
-                <h3>Project name goes here</h3>
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>JavaScript</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow" /></span
-                  ></a>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="./images/img-1 (6).svg"
-                  alt="project image"
-                  class="project-img"
-                />
-              </div>
-              <div class="project-info">
-                <h3>Project name goes here</h3>
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>JavaScript</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow"
-                      /> </span
-                  ></a>
-                </div>
+      
+              <div class="work_cards" id="card1">
               </div>
             </div>
-            <div class="projects-desktop">
-              <div class="project-title"><h2>projects</h2></div>
-
-              <div class="project-dots">
-                <img src="./images/image_dots.svg " alt="img" />
+      
+            <div class="sec_third">
+              <div class="work_cards" id="card2">
               </div>
-              <div class="project-img-1">
-                <img src="./images/Rectangle 21.svg" alt="img" />
+      
+              <div class="secondimage">
+                <img class="sec_back_image" src="assets/image-geometry_2.svg" alt="">
               </div>
-              <div class="project-img-3">
-                <img src="./images/Rectangle 46.svg" alt="img" />
+      
+              <div class="work_cards" id="card3">
               </div>
-              <div class="project-geometry-1">
-                <img src="./images/image-geometry_2.svg" alt="img" />
+            </div>
+      
+      
+            <div class="four_five">
+              <div class="work_cards" id="card4">
               </div>
-              <div class="project-img-2">
-                <img src="./images/Rectangle 25.svg" alt="img" />
+      
+              <div></div>
+      
+              <div class="work_cards" id="card5">
               </div>
-              <div class="project-img-5">
-                <img src="./images/Rectangle 27.svg" alt="img" />
+            </div>
+      
+      
+            <div class="lastcard">
+              <div class="lastbg"></div>
+              <div class="work_cards" id="card6">
               </div>
-              <div class="project-img-4">
-                <img src="./images/Rectangle 26.svg" alt="img" />
-              </div>
-
-              <!-- <div class="project-info project-info-1">
-                <h3 class="project-info-1-title">Project name goes here</h3>
-                <ul class="project-info-1-list">
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>JavaScript</li>
-                </ul>
-                <div class="project-link project-info-1-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow" /></span
-                  ></a>
-                </div>
-              </div> -->
-              <!-- <div class="project-info project-info-desktop">
-                <h3 class="project-info-2-title">Project name goes...</h3>
-                <ul class="project-info-desktop-list">
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>+1</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow" /></span
-                  ></a>
-                </div>
-              </div> -->
-              <div class="project-geometry-2"> 
-                <img src="./images/image-geometry_3.svg" alt="img" />
-              </div>
-              <div class="project-geometry-3">
-                <img src="./images/image-geometry_5.svg" alt="img" />
-              </div>
-              <div class="project-geometry-4">
-                <img src="./images/image-geometry_4.svg" alt="img" />
-              </div>
-              <div class="project-img-6">
-                <img src="./images/Rectangle 47.svg" alt="img" /> 
-              </div>
-              
-              <div class="project-info" id="project-info">
-                <h3 class="project-info-title">Project name goes here</h3>
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>JavaScript</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow" /></span
-                  ></a>
-                </div>
-              </div>
-              <div class="project-info" id="project-info-desktop">
-                <h3 class="project-info-title">Project name goes...</h3>
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>+1</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#"
-                    >See this project
-                    <span
-                      ><img
-                        src="./images/right-arrow.svg"
-                        alt="right arrow" /></span
-                  ></a>
-                </div>
-              </div>
-    
+      
             </div>
           </section>
-          <section class="about-page">
+          <section id="about-section" class="about-page">
               <div class="about-intro">
                 <h2 class="about-title">About</h2>
                 <p class="about-text">
@@ -332,12 +138,14 @@
 Currently, I'm learning at Microverse, a software development program that teaches students remotely, enabling them to work in pair programming. I am equipped with the following skills as I went through the program.
                 </p>
                 <div class="about-link about-link-desktop">
-                  <p class="about-link-text">
-                    <a href="#">Get my CV</a>
-                  </p>
-                  <div class="download-icon">
-                    <img src="./images/download-icon.svg" alt="download icon" />
-                  </div>
+                  <button class="cv-btn" type="button">
+                    <a href="https://docs.google.com/document/d/1bnBjXIs12pG6vJ2szWGBnVVa2NthPMp38CJgpKZcoKs/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="cv-btn-link">
+                    Get my CV <span class="material-symbols-outlined">
+                      download
+                    </span>
+                  </a>
+                  </button>
+            
                 </div>
               </div>
               <div class="about-info">
@@ -345,32 +153,32 @@ Currently, I'm learning at Microverse, a software development program that teach
                   <h3>Languages</h3>
                   <ul>
                     <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript (ES5/ES6)</li>
-                    <li>Redux</li>
-                    <li>PostgreSQL</li>
-                    <li>Ruby</li>
+                    <li class="about-list">CSS</li>
+                    <li class="about-list">JavaScript (ES5/ES6)</li>
+                    <li class="about-list">Redux</li>
+                    <li class="about-list">PostgreSQL</li>
+                    <li class="about-list">Ruby</li>
                   </ul>
                   <img src="./images/about-img-1.svg" alt="hash tag" />
                 </div>
                 <div class="about-info-2">
                   <h3>Frameworks</h3>
                   <ul>
-                    <li>Bootstrap</li>
-                    <li>React js</li>
-                    <li>Ruby on rails</li>
-                    <li>RSpec</li>
+                    <li class="about-list">Bootstrap</li>
+                    <li class="about-list">React js</li>
+                    <li class="about-list">Ruby on rails</li>
+                    <li class="about-list">RSpec</li>
                   </ul>
                   <img src="./images/about-img-2.svg" alt="dimond symbol" />
                 </div>
                 <div class="about-info-3">
                   <h3>Skills</h3>
                   <ul>
-                    <li>Codekit</li>
-                    <li>Codepen</li>
-                    <li>GitHub</li>
-                    <li>GitLAb</li>
-                    <li>Terminal</li>
+                    <li class="about-list">Codekit</li>
+                    <li class="about-list">Codepen</li>
+                    <li class="about-list">GitHub</li>
+                    <li class="about-list">GitLAb</li>
+                    <li class="about-list">Terminal</li>
                   </ul>
                   <img src="./images/about-img-3.svg" alt="light bulb" />
                 </div>
@@ -379,7 +187,7 @@ Currently, I'm learning at Microverse, a software development program that teach
                 </div>
               </div>
           </section>
-          <section class="form-section">
+          <section id="contact" class="form-section">
             <div class="last-part-wraper">
               <div class="last-part-img">
                 <img src="./images/header-img.svg" alt=" image" />
@@ -391,8 +199,7 @@ Currently, I'm learning at Microverse, a software development program that teach
                 <div class="last-part-main">
                   <h2 class="last-title" id="dom">Get started</h2>
                   <p class="last-text" >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Whether you have an exciting project in mind or just want to say hello, I'm always open to hearing from new people. Feel free to contact me using the form below. I'm excited to see how we can work together!
                   </p>
                   <form action="" method="post" class="form">
                     <div class="desktop-form">
@@ -401,31 +208,37 @@ Currently, I'm learning at Microverse, a software development program that teach
                           type="text"
                           name="user_name"
                           placeholder="Your name"
+                          maxlength="30" 
+                          id="name" 
                           required
                         />
                       </label>
                       <label for="email">
                         <input
                           type="text"
+                          id="mail"
                           name="user_email"
                           placeholder="Your email"
                           required
                         />
                       </label>
                     </div>
+                    <p id="error-message"></p>
                     <label for="message">
                       <textarea
                         name="user_message"
-                        id=""
+                        id="message"
                         cols="30"
                         rows="10"
                         placeholder="Enter your message here..."
+                        maxlength="500" 
+                        required
                       ></textarea>
                     </label>
+                    <div class="last-link">
+                      <button onclick="validate()" class="last-btn" id="submit-btn" type="submit">Start collaboration</button>
+                    </div>
                   </form>
-                  <div class="last-link">
-                    <p class="last-btn"><a href="#">Start collaboration </a></p>
-                  </div>
                 </div>
                 <div class="last-img">
                   <img src="./images/image-geometry_7.svg" alt="image" />
@@ -433,39 +246,52 @@ Currently, I'm learning at Microverse, a software development program that teach
               </div>
             </div>
           </section>
-      </main>
-      <footer>
-        <div class="footer" id="footer">
-          <div class="footer-link">
-            <div class="footer-info">
-              <p class="footer-text">
-                <a href="#">Get my Resume </a>
-              </p>
-              <div class="share-icon">
-                <img src="./images/share-icon.svg" alt="share icon" />
-              </div>
+          <footer>
+            <div class="footer" id="footer">
+              <div class="footer-link">
+                <div class="footer-info">
+               
+                    <a rel="noopener" href="https://docs.google.com/document/d/1bnBjXIs12pG6vJ2szWGBnVVa2NthPMp38CJgpKZcoKs/edit?usp=sharing" target="_blank"><span>Get My Resume<span class="material-symbols-outlined"> open_in_new </span></span></a>
+                 
+                </div>
+                <ul class="icons">
+              
+                  <li class="icon-list"> <a target="_blank" rel="noopener" href="https://github.com/Yidnekachew-cmd"> <img  src="./images/ic_github.svg" alt="github icon" /></a></li>
+                  <li class="icon-list"><img src="./images/ic_twitter.svg" alt="twitter icon" />
+                  </li>
+                  <li class="icon-list"> <a target="_blank" rel="noopener" href="http://linkedin.com/in/yidnekachew-kassahun">
+                    <img  src="./images/ic_linkedin.svg" alt="linkedin icon" /></a>
+                  </li>
+                <li class="icon-list">
+                    <img src="./images/ic_angellist.svg" alt="angellist icon" />
+                  </li>
+                </ul>
+             
             </div>
-            <ul class="icons">
-              <!-- <li>
-                <img
-                  src="./images/ic_stackoverflow.svg"
-                  alt="stackoverflow icon"
-                />
-              </li> -->
-              <li><img src="./images/ic_github.svg" alt="github icon" /></li>
-              <li><img src="./images/ic_twitter.svg" alt="twitter icon" /></li>
-              <li>
-                <img src="./images/ic_linkedin.svg" alt="linkedin icon" />
-              </li>
-              <!-- <li><img src="./images/ic_medium.svg" alt="medium icon" /></li>
-              <li> -->
-                <img src="./images/ic_angellist.svg" alt="angellist icon" />
-              </li>
-            </ul>
-         
+          </footer>
+      </main>
+      <div class="modal-container">
+        <div class="modalbox">
+          <div class="modal-close-title">
+            <img onclick="CloseModal()" class="close-modal" src="./images/Union.svg" alt="closebutton">
+            <h3 class="modaltitle"></h3>
+          </div>
+          <ul class="language_used_modal">
+    
+          </ul>
+          <img class="popup-image" alt="Project Popup Image">
+          <p class="pop-up-description"></p>
+          <div class="modal-button-div">
+    
+            <a class="seelive"><button type="button">See live <img class="button-image" src="./images/link.svg" alt="Link">
+              </button></a>
+    
+            <a class="seesource"><button type="button">See source <img class="button-image" src="./images/ic_github_white-1.svg"
+                  alt="github"></button></a>
+          </div>
         </div>
-      </footer>
-    </div>
-    <script type="text/javascript" src=""></script>
+      </div> -->
+    
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
