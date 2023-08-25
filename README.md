@@ -33,13 +33,13 @@
 
 <!-- LOOM VIDEO -->
 
-## 🚀 Loom Video <a name="loom-video"></a>
+<!-- ## 🚀 Loom Video <a name="loom-video"></a>
 
 > Link to the loom video of the project description.
 
 - [Loom Video Link]()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -85,7 +85,7 @@
 
 > Link to the deployed project.
 
-- [Live Demo Link]()
+- [Live Demo Link](https://yidnekachew-cmd.github.io/My-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
